@@ -9,7 +9,12 @@ class CalculatorTest {
     private final Calculator calc = new Calculator();
 
     @Test
-    void add() {
+    void testAdd() {
         assertEquals(8, calc.add(5, 3));
+    }
+
+    @Test
+    void testSubtract() {
+        assertEquals(2, calc.subtract(5, 3));
     }
 }
